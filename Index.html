@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9E79F;
+}
+
+header {
+    background-color: #2980B9;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.gambar {
+    flex: 1 0 40%;
+}
+
+.gambar img {
+    width: 100%;
+    height: auto;
+}
+
+.teks {
+    flex: 60%;
+    padding: 0 50px;
+    text-align: auto;
+}
+
+.teks p:last-of-type {
+    font-size: 30px;
+    animation: bergerak 2s ease-in-out infinite alternate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-inline-color: #fff;
+	
+}
+
+@keyframes bergerak {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
+
+footer {
+    background-color: #2980B9;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+}
+</style>
+<body>
+    <header>
+        <h1>Selamat Hari Raya Idul Fitri 1444 H</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="gambar">
+                <img src="image.png" alt="Ucapan Idul Fitri">
+            </div>
+            <div class="teks">
+                <p>Di hari yang fitri ini, mari kita saling memaafkan dan mempererat tali silaturahmi 🙏</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; My Family. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
